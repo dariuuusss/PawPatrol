@@ -1,0 +1,144 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+
+}
+.navbar{
+  background-color: #47b626;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  columns: whitesmoke;
+  align-items: center;
+}
+.links{
+  padding: 40px;
+  width: 90%;
+  margin-left: auto;
+}
+.links .nav-link{
+
+
+  padding: 40px;
+}
+
+.logopic{
+  padding: 10px;
+  position: absolute;
+  margin-top: 70px;
+  width: 200px;
+  height: auto;
+}
+
+header{
+  width: 100vw;
+  height: 70vh;
+  background-image: url(images/home-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.header-content{
+  background-color: #feffac;
+  padding: 8vh;
+  align-items: center;
+  text-align: center;
+  font-size: 50px;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  color: #47b626;
+}
+
+.about-us{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #feffac;
+  margin: auto;
+  justify-content: center;
+}
+.about-us-btn{
+  padding: 20px;
+  background-color: #47b626;
+  border-radius: 30px;
+  font-size: 40px;
+}
+.description{
+  font-size: 35px;
+  width: fit-content;
+}
+.about-us-content{
+  width: 45%;
+  padding: 30px;
+}
+.projects{
+  align-items:center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.img-container{
+  max-width:max-content;
+  width: 95%;
+}
+
+.img-container .in-img {
+  text-align: left;
+}
+
+.img-container .img-list {
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+
+.img-container .img-list .in-img {
+  min-width: 325px;
+  margin-right: 18px;
+}
+
+.img-container .img-list .in-img img {
+  width: 325px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.img-list.active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+
+.img-container .img-list-dogos{
+  display: grid;
+  font-size: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  grid-template-columns: repeat(10, 1fr);
+}
+.img-container .img-list-dogos .in-img img{
+  width: 325px;
+  height: 400px;
+  object-fit: cover;
+  margin-right: 18px;
+}
